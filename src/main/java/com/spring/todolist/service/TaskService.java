@@ -5,9 +5,11 @@ import com.spring.todolist.dto.TaskResponseDTO;
 import com.spring.todolist.exception.TaskNotFoundException;
 import com.spring.todolist.model.Task;
 import com.spring.todolist.repository.TaskRepository;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@Service
 public class TaskService {
 
     private final TaskRepository rep;
